@@ -55,7 +55,7 @@ const transforms: transforms = {
     if (!data.level) {
       return ``
     } else if (data.level === 1) {
-    return `<div id=${id}><h${data.level}>${data.text}</h${data.level}></div>`;
+    return `<div id=${id} style="text-align:center"><h${data.level}>${data.text}</h${data.level}></div>`;
     } else if (data.level < 4) {
       return `<div id=${id} style="padding-top: 15px"><h${data.level}>${data.text}</h${data.level}></div>`
     } else {
