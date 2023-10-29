@@ -1,0 +1,438 @@
+{
+  "time": 1698409894841,
+  "blocks": [
+    {
+      "id": "7Jv2v_pH7r",
+      "type": "header",
+      "data": {
+        "text": "ChatGPT Can Talk, but That Doesn’t Help Companies With Sensitive Data",
+        "level": 1
+      }
+    },
+    {
+      "id": "lgTTu5OO5w",
+      "type": "paragraph",
+      "data": {
+        "text": "ChatGPT, the conversational AI developed by OpenAI, has recently been given a voice. Now, it can answer spoken questions in real time using Whisper, OpenAI’s speech-to-text model, and a new text-to-speech model. The voices for this AI have been created by training the text-to-speech model on the voices of actors that OpenAI had hired. Users can choose from one of five lifelike synthetic voices and converse with ChatGPT as if they were making a call."
+      }
+    },
+    {
+      "id": "-lXslC2tMA",
+      "type": "simpleImage",
+      "data": {
+        "url": "https://miro.medium.com/v2/resize:fit:700/1*hsTcmM0g5i860TIlXvn_LQ.png",
+        "caption": "OpenAI began to roll out ChatGPT’s new features on September 25, 2023",
+        "withBorder": false,
+        "withBackground": false,
+        "stretched": false
+      }
+    },
+    {
+      "id": "cbOaweZ_YH",
+      "type": "paragraph",
+      "data": {
+        "text": "However, there is a catch. This voice feature is only available through chat.openai.com. This means any data you supply can be used as training data for future iterations of the AI model, which would be equivalent to exposing your data to the public. This is not a viable solution for companies with sensitive or proprietary data."
+      }
+    },
+    {
+      "id": "uRyspc1H6U",
+      "type": "header",
+      "data": {
+        "text": "Why should my company use voice technologies?",
+        "level": 2
+      }
+    },
+    {
+      "id": "GNN2VTzOO6",
+      "type": "paragraph",
+      "data": {
+        "text": "Voice technology is revolutionizing business experiences across industries and sectors. Here are some reasons why your company should consider integrating voice technologies:"
+      }
+    },
+    {
+      "id": "qwjU6HMsmd",
+      "type": "paragraph",
+      "data": {
+        "text": "<b>Personalized Experience:</b>&nbsp;Voice technology allows businesses to offer their customers more personalized and humanized experiences."
+      }
+    },
+    {
+      "id": "DZ0JBG5m0k",
+      "type": "paragraph",
+      "data": {
+        "text": "<b>Efficiency:&nbsp;</b>Voice-activated assistants and devices can streamline processes and improve efficiency."
+      }
+    },
+    {
+      "id": "vkJALC-AdC",
+      "type": "paragraph",
+      "data": {
+        "text": "<b>Competitive Edge:&nbsp;</b>As more businesses adopt these technologies, those who do not may be disadvantaged."
+      }
+    },
+    {
+      "id": "uUvCjiX8ck",
+      "type": "paragraph",
+      "data": {
+        "text": "The rise of voice-activated assistants like Amazon’s Alexa or Google’s Assistant demonstrates consumers' growing acceptance and demand for such technologies. By integrating similar technologies into your business operations or customer service offerings, you can stay ahead of the curve and meet your customers’ evolving expectations."
+      }
+    },
+    {
+      "id": "bwmSrSfgxe",
+      "type": "header",
+      "data": {
+        "text": "What is Speech2Text and Text2Speech?",
+        "level": 2
+      }
+    },
+    {
+      "id": "OQ_frHcyuT",
+      "type": "paragraph",
+      "data": {
+        "text": "Speech2Text&nbsp;and&nbsp;Text2Speech&nbsp;are two key technologies underpinning voice systems' functionality."
+      }
+    },
+    {
+      "id": "yIb6fwxEsk",
+      "type": "paragraph",
+      "data": {
+        "text": "Speech2Text&nbsp;(or Speech Recognition) is a technology that converts spoken language into written text. This technology powers voice-command searches, transcription services, and voice assistants like Siri or Alexa."
+      }
+    },
+    {
+      "id": "-ZlxUyUSi9",
+      "type": "paragraph",
+      "data": {
+        "text": "Text2Speech&nbsp;is the reverse process, converting written text into spoken words. This technology is used in applications such as audiobooks, content narration, and interactive voice response (IVR) systems."
+      }
+    },
+    {
+      "id": "XivgZSaJYv",
+      "type": "header",
+      "data": {
+        "text": "Exploring Speech2Text: Turning Voice into Text",
+        "level": 4
+      }
+    },
+    {
+      "id": "R2yHqSNzhe",
+      "type": "paragraph",
+      "data": {
+        "text": "There are numerous real-world applications for businesses:"
+      }
+    },
+    {
+      "id": "X2iXb4wrWS",
+      "type": "paragraph",
+      "data": {
+        "text": "<b>Customer Support Transcription:&nbsp;</b>Convert customer calls into text for record-keeping or analysis."
+      }
+    },
+    {
+      "id": "ILD0DpXsHC",
+      "type": "paragraph",
+      "data": {
+        "text": "<b>Voice-command Searches:</b>&nbsp;Allow customers to search your product catalog using their voice."
+      }
+    },
+    {
+      "id": "ePXeUQSFAy",
+      "type": "paragraph",
+      "data": {
+        "text": "<b>Voice Notes and Reminders for CRM Systems:&nbsp;</b>Enable sales teams to log interactions or set reminders using their voice quickly."
+      }
+    },
+    {
+      "id": "WifKSu3XEX",
+      "type": "paragraph",
+      "data": {
+        "text": "The benefits of Speech2Text include instant communication, improved accessibility for those who struggle with typing or reading small text, and a modern touch to your business operations."
+      }
+    },
+    {
+      "id": "nzfSF4Y883",
+      "type": "header",
+      "data": {
+        "text": "Delving into Text2Speech: Giving Voice to Text",
+        "level": 4
+      }
+    },
+    {
+      "id": "WM4l3n4cHw",
+      "type": "paragraph",
+      "data": {
+        "text": "This technology can transform written content into spoken words with potential applications such as:"
+      }
+    },
+    {
+      "id": "q74eOPmdQZ",
+      "type": "paragraph",
+      "data": {
+        "text": "Voice-based Notifications and Alerts:&nbsp;Send automated voice messages to customers or staff.Interactive Voice Response (IVR) Systems:&nbsp;Using automated speech, guide callers through your phone system.Audiobooks and Content Narration:&nbsp;Convert blog posts or articles into audio format for accessibility or convenience."
+      }
+    },
+    {
+      "id": "ofIiecHsA-",
+      "type": "paragraph",
+      "data": {
+        "text": "The benefits of Text2Speech include enhancing user engagement, improving accessibility for visually impaired users, and offering a dynamic user experience."
+      }
+    },
+    {
+      "id": "2xADck_fIU",
+      "type": "header",
+      "data": {
+        "text": "How can I safely use voice technologies with LLMs like ChatGPT?",
+        "level": 4
+      }
+    },
+    {
+      "id": "o56ZgutlS8",
+      "type": "paragraph",
+      "data": {
+        "text": "While ChatGPT’s new voice feature may not be suitable for companies with sensitive data, there are alternative solutions. One such solution is to use Speech2Text and Text2Speech APIs, such as those offered by Google."
+      }
+    },
+    {
+      "id": "kAmUh8goCx",
+      "type": "simpleImage",
+      "data": {
+        "url": "https://miro.medium.com/v2/resize:fit:512/0*Qnen2kirHFFiUEWL",
+        "caption": "Google offers 220+ voices across 40+ languages and variants",
+        "withBorder": false,
+        "withBackground": false,
+        "stretched": false
+      }
+    },
+    {
+      "id": "N_RNiHzz7e",
+      "type": "paragraph",
+      "data": {
+        "text": "Google’s speech API offers hundreds of voices in dozens of languages and is more powerful than OpenAI’s Whisper. By using Google’s voice API in conjunction with the ChatGPT API, you can maintain full control over your data. Importantly, no data is retained for model training when using these APIs."
+      }
+    },
+    {
+      "id": "48JbP4HLJZ",
+      "type": "paragraph",
+      "data": {
+        "text": "This approach allows you to leverage the power of ChatGPT’s conversational abilities while ensuring your data remains secure."
+      }
+    },
+    {
+      "id": "I3B-fFkQnB",
+      "type": "header",
+      "data": {
+        "text": "A Quick Tutorial For Combining Google Voice APIs and ChatGPT",
+        "level": 2
+      }
+    },
+    {
+      "id": "BXLeur9KEh",
+      "type": "paragraph",
+      "data": {
+        "text": "We've put together a quick tutorial to help you integrate Google’s voice APIs and ChatGPT. The full tutorial is available on YouTube and walks you through every step."
+      }
+    },
+    {
+      "id": "X7Vn9LZPK9",
+      "type": "paragraph",
+      "data": {
+        "text": "Tutorial:&nbsp;<a href=\"https://www.youtube.com/watch?v=nWv-q3-7cY8\" target=\"_blank\">Build a Text2Speech Chatbot in Minutes in PYTHON with ChatGPT</a>"
+      }
+    },
+    {
+      "id": "ZqeManjmd0",
+      "type": "paragraph",
+      "data": {
+        "text": "Here’s a brief overview of whats in the tutorial:"
+      }
+    },
+    {
+      "id": "GlcsjQm-LG",
+      "type": "header",
+      "data": {
+        "text": "Getting Started: Setting Up Your Development Environment",
+        "level": 4
+      }
+    },
+    {
+      "id": "O9bXGH9_18",
+      "type": "paragraph",
+      "data": {
+        "text": "First, you’ll need to set up your development environment:"
+      }
+    },
+    {
+      "id": "cRnU3JiGkX",
+      "type": "paragraph",
+      "data": {
+        "text": "1. Navigate to the provided repository and clone it."
+      }
+    },
+    {
+      "id": "ADasV9Rx_8",
+      "type": "paragraph",
+      "data": {
+        "text": "2. Install the required tools: Git and a preferred IDE (e.g., Visual Studio Code)."
+      }
+    },
+    {
+      "id": "2CaD5er43j",
+      "type": "header",
+      "data": {
+        "text": "Key Ingredients: API Keys and Their Importance",
+        "level": 4
+      }
+    },
+    {
+      "id": "UncBJZUjAz",
+      "type": "paragraph",
+      "data": {
+        "text": "Next, you’ll need to obtain the necessary API keys:"
+      }
+    },
+    {
+      "id": "fBMFPmd8-g",
+      "type": "paragraph",
+      "data": {
+        "text": "<b>OpenAI API Key:&nbsp;</b>Sign up on OpenAI’s website to obtain this key, which is crucial for driving ChatGPT."
+      }
+    },
+    {
+      "id": "cRLPdYsAwZ",
+      "type": "paragraph",
+      "data": {
+        "text": "<b>Google Project and Credentials: </b>Create a Google project and enable relevant APIs. Specifically, you’ll need to enable “Cloud Speech-to-Text” and “Text-to-Speech” services. Set up billing for your project and obtain JSON credentials for these Google APIs."
+      }
+    },
+    {
+      "id": "Bf-lbyHHFA",
+      "type": "header",
+      "data": {
+        "text": "Understanding the Modules",
+        "level": 4
+      }
+    },
+    {
+      "id": "MLjxaBp4ND",
+      "type": "paragraph",
+      "data": {
+        "text": "The provided codebase includes several modules:"
+      }
+    },
+    {
+      "id": "5aWe1e91-n",
+      "type": "paragraph",
+      "data": {
+        "text": "<b>chatbot.py</b>: Handles core interactions with ChatGPT."
+      }
+    },
+    {
+      "id": "N7piUeR_Bu",
+      "type": "paragraph",
+      "data": {
+        "text": "<b>text_to_speech.py:</b> Converts ChatGPT’s text responses into voice."
+      }
+    },
+    {
+      "id": "FGGwZTgaOe",
+      "type": "paragraph",
+      "data": {
+        "text": "<b>transcribe.py: </b>Transcribes user’s voice inputs for ChatGPT."
+      }
+    },
+    {
+      "id": "G_AUmtSPSA",
+      "type": "paragraph",
+      "data": {
+        "text": "<b>main.py:&nbsp;</b>Sets up the user interface using Python Tkinter."
+      }
+    },
+    {
+      "id": "VLnLc0D_Ug",
+      "type": "header",
+      "data": {
+        "text": "The Bigger Picture: Beyond the Tutorial",
+        "level": 2
+      }
+    },
+    {
+      "id": "WeokOMpg3l",
+      "type": "paragraph",
+      "data": {
+        "text": "While this tutorial provides a basic introduction to integrating voice technology with AI chatbots like ChatGPT, many more possibilities exist for businesses to explore further."
+      }
+    },
+    {
+      "id": "XIcGD-Okwo",
+      "type": "paragraph",
+      "data": {
+        "text": "Considerations for security, scalability, and user experience should be at the forefront as you scale these technologies beyond simple chatbots."
+      }
+    },
+    {
+      "id": "uOBVu62-V7",
+      "type": "paragraph",
+      "data": {
+        "text": "Several businesses have seamlessly integrated voice tech into their operations, resulting in increased customer satisfaction, improved operational efficiency, and innovative offerings. For instance:"
+      }
+    },
+    {
+      "id": "OQ2oKSdOGB",
+      "type": "list",
+      "data": {
+        "style": "unordered",
+        "items": [
+          "Domino’s Pizza&nbsp;has seen a significant increase in their market share after introducing ‘Dom’, their voice ordering assistant. This has not only improved customer experience but also streamlined their ordering process.",
+          "Bank of America&nbsp;introduced Erica, a voice-enabled AI assistant that helps customers with banking services. Erica has been a game-changer for the bank, improving customer engagement and driving up mobile banking usage.",
+          "Starbucks, in years prior, made&nbsp;a significant impact with its voice ordering system, “My Starbucks Barista”. This AI-powered chatbot allows customers to place their orders via voice command or messaging. The introduction of this technology has not only improved customer experience but also increased the efficiency of their ordering process, contributing to Starbucks’ continued market dominance.",
+          "Capital One&nbsp;is another company leveraging voice technology to enhance customer experience. They introduced “Eno,” a natural language chatbot that helps customers manage their money through voice commands. Eno can provide real-time information about account balances and transactions (plus it can even understand and respond to emojis). This innovative approach has helped Capital One differentiate itself in the highly competitive banking industry."
+        ]
+      }
+    },
+    {
+      "id": "8XutbXRSjS",
+      "type": "paragraph",
+      "data": {
+        "text": "These examples demonstrate how businesses across various sectors are leveraging voice technology to improve customer engagement and operational efficiency. Remember, the goal is not just to adopt new technology for its own sake but to leverage it in ways that add real value to your business and your customers."
+      }
+    },
+    {
+      "id": "nAAoIMZKaU",
+      "type": "header",
+      "data": {
+        "text": "Final Thoughts",
+        "level": 2
+      }
+    },
+    {
+      "id": "zCnbkQ8bLL",
+      "type": "paragraph",
+      "data": {
+        "text": "As we move into the digital age, businesses that embrace and adapt to new technologies will be better positioned to thrive. Voice technology, in particular, offers a wealth of opportunities for businesses to improve their operations and customer experiences. One of the most widely applicable applications of voice technology is multi-lingual support. Dozens of languages are already available through Google Voice API, and new languages are added almost every month."
+      }
+    },
+    {
+      "id": "7r0QRJFII_",
+      "type": "paragraph",
+      "data": {
+        "text": "We encourage you to experiment with voice technology in your business. The tutorial provided in this article is a great starting point. However, don’t stop there. Explore different applications and use cases that are relevant to your business."
+      }
+    },
+    {
+      "id": "_46UXZoLa6",
+      "type": "paragraph",
+      "data": {
+        "text": "Finally, we invite you to share your experiences and learnings as you implement voice tech in your operations. Your insights could be invaluable to other businesses embarking on a similar journey."
+      }
+    },
+    {
+      "id": "g62zRhCmaY",
+      "type": "paragraph",
+      "data": {
+        "text": "Remember, the future belongs to those who are prepared for it. So start exploring today!"
+      }
+    }
+  ],
+  "version": "2.28.2"
+}
