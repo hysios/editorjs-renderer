@@ -52,7 +52,15 @@ const transforms: transforms = {
   },
 
   header: ({ data, id }) => {
+    if (!data.level) {
+      return ``
+    } else if (data.level === 1) {
     return `<div id=${id}><h${data.level}>${data.text}</h${data.level}></div>`;
+    } else if (data.level < 4) {
+      return `<div id=${id} style="padding-top: 15px"><h${data.level}>${data.text}</h${data.level}></div>`
+    } else {
+      return `<div id=${id} style="padding-top: 10px"><h${data.level}>${data.text}</h${data.level}></div>`
+    }
   },
 
   paragraph: ({ data, id }) => {
@@ -84,10 +92,16 @@ const transforms: transforms = {
   },
 
   image: ({ data, id }) => {
-    let caption = data.caption ? data.caption : "Image";
+    let alt = data.caption ? data.caption : "Image";
+    if (data.caption === "") {
+      return `<img src="${
+        data.file && data.file.url ? data.file.url : data.url
+      }" alt="${alt}" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" /></br>`;
+    }
     return `<img src="${
       data.file && data.file.url ? data.file.url : data.url
-    }" alt="${caption}" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" />`;
+    }" alt="${alt}" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" />
+    <p class="image-caption">${data.caption}</p>`;
   },
 
   simpleImage: ({ data, id }) => {
