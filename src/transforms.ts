@@ -20,6 +20,7 @@ type ListItem = {
 const alignType = ["left", "right", "center", "justify"]
 
 export type block = {
+  id: string;
   type: string;
   data: {
     text?: string;
@@ -50,11 +51,11 @@ const transforms: transforms = {
     return `<br/>`;
   },
 
-  header: ({ data }) => {
-    return `<h${data.level}>${data.text}</h${data.level}>`;
+  header: ({ data, id }) => {
+    return `<div id=${id}><h${data.level}>${data.text}</h${data.level}></div>`;
   },
 
-  paragraph: ({ data }) => {
+  paragraph: ({ data, id }) => {
     const paragraphAlign = data.alignment || data.align;
 
     if (typeof paragraphAlign !== 'undefined' && alignType.includes(paragraphAlign)) {
@@ -64,7 +65,7 @@ const transforms: transforms = {
     }
   },
 
-  list: ({ data }) => {
+  list: ({ data, id }) => {
     const listStyle = data.style === "unordered" ? "ul" : "ol";
 
     const recursor = (items: any, listStyle: string) => {
@@ -82,29 +83,29 @@ const transforms: transforms = {
     return recursor(data.items, listStyle);
   },
 
-  image: ({ data }) => {
+  image: ({ data, id }) => {
     let caption = data.caption ? data.caption : "Image";
     return `<img src="${
       data.file && data.file.url ? data.file.url : data.url
     }" alt="${caption}" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" />`;
   },
 
-  simpleImage: ({ data }) => {
+  simpleImage: ({ data, id }) => {
     let url = data.url;
     let caption = data.caption ? data.caption : "Image";
     return `<img src="${url}" alt="${caption}" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" />
   <p class="image-caption">${caption}</p>`;
   },
 
-  quote: ({ data }) => {
+  quote: ({ data, id }) => {
     return `<blockquote>${data.text}</blockquote> - ${data.caption}`;
   },
 
-  code: ({ data }) => {
+  code: ({ data, id }) => {
     return `<pre><code>${data.code}</code></pre>`;
   },
 
-  embed: ({ data }) => {
+  embed: ({ data, id }) => {
     switch (data.service) {
       case "vimeo":
         return `<iframe src="${data.embed}" height="${data.height}" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>`;
@@ -117,7 +118,7 @@ const transforms: transforms = {
     }
   },
 
-  faq: ({ data }) => { // We will render FAQ blocks as accordions elsewhere
+  faq: ({ data, id }) => { // We will render FAQ blocks as accordions elsewhere
     return ""
   },
 };

@@ -16,6 +16,7 @@ declare type ListItem = {
     items: Array<ListItem>;
 };
 export declare type block = {
+    id: string;
     type: string;
     data: {
         text?: string;
