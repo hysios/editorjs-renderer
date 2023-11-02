@@ -1,6 +1,6 @@
 {
   "name": "editorjs-renderer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An extensible custom renderer for editorjs blocks that includes support for the simpleImage block",
   "main": "build/edjsHTML.node.js",
   "types": "build/app.d.ts",
