@@ -1,404 +1,224 @@
 {
-  "time": 1698409894841,
+  "time": 1698941204210,
   "blocks": [
     {
-      "id": "7Jv2v_pH7r",
+      "id": "vsb42ikcae",
       "type": "header",
       "data": {
-        "text": "ChatGPT Can Talk, but That Doesn’t Help Companies With Sensitive Data",
-        "level": 1
-      }
-    },
-    {
-      "id": "lgTTu5OO5w",
-      "type": "paragraph",
-      "data": {
-        "text": "ChatGPT, the conversational AI developed by OpenAI, has recently been given a voice. Now, it can answer spoken questions in real time using Whisper, OpenAI’s speech-to-text model, and a new text-to-speech model. The voices for this AI have been created by training the text-to-speech model on the voices of actors that OpenAI had hired. Users can choose from one of five lifelike synthetic voices and converse with ChatGPT as if they were making a call."
-      }
-    },
-    {
-      "id": "-lXslC2tMA",
-      "type": "simpleImage",
-      "data": {
-        "url": "https://miro.medium.com/v2/resize:fit:700/1*hsTcmM0g5i860TIlXvn_LQ.png",
-        "caption": "OpenAI began to roll out ChatGPT’s new features on September 25, 2023",
-        "withBorder": false,
-        "withBackground": false,
-        "stretched": false
-      }
-    },
-    {
-      "id": "cbOaweZ_YH",
-      "type": "paragraph",
-      "data": {
-        "text": "However, there is a catch. This voice feature is only available through chat.openai.com. This means any data you supply can be used as training data for future iterations of the AI model, which would be equivalent to exposing your data to the public. This is not a viable solution for companies with sensitive or proprietary data."
-      }
-    },
-    {
-      "id": "uRyspc1H6U",
-      "type": "header",
-      "data": {
-        "text": "Why should my company use voice technologies?",
+        "text": "Introduction",
         "level": 2
       }
     },
     {
-      "id": "GNN2VTzOO6",
+      "id": "bvc7fpl7wn",
+      "type": "code",
+      "data": {
+        "code": "pip install pyquickconfig"
+      }
+    },
+    {
+      "id": "edbyrfrz45",
       "type": "paragraph",
       "data": {
-        "text": "Voice technology is revolutionizing business experiences across industries and sectors. Here are some reasons why your company should consider integrating voice technologies:"
+        "text": "QuickConfig Repo: https://github.com/austinibele/quickconfig"
       }
     },
     {
-      "id": "qwjU6HMsmd",
+      "id": "qh616lcwf",
       "type": "paragraph",
       "data": {
-        "text": "<b>Personalized Experience:</b>&nbsp;Voice technology allows businesses to offer their customers more personalized and humanized experiences."
+        "text": "Managing configurations is fundamental in machine learning, where numerous parameters need to be tuned and controlled. I discovered this as a Senior Machine Learning Engineer at a Austin, TX consultancy, and this has stayed true throughout my experience founding My-Visa-USA, an AI-first start-up that aims to lower the financial barriers to U.S. Visa and Immigration. It’s also stayed true through various ML software projects we’ve completed at Avance.ai."
       }
     },
     {
-      "id": "DZ0JBG5m0k",
+      "id": "g69ng7g4lz",
       "type": "paragraph",
       "data": {
-        "text": "<b>Efficiency:&nbsp;</b>Voice-activated assistants and devices can streamline processes and improve efficiency."
+        "text": "Two popular libraries for handling these configurations are ArgParse and Hydra. As we embarked on our quest to find the most suitable config management library at our company, we had a clear set of criteria in mind. We sought a library that would fulfill the following eight requirements:"
       }
     },
     {
-      "id": "vkJALC-AdC",
-      "type": "paragraph",
-      "data": {
-        "text": "<b>Competitive Edge:&nbsp;</b>As more businesses adopt these technologies, those who do not may be disadvantaged."
-      }
-    },
-    {
-      "id": "uUvCjiX8ck",
-      "type": "paragraph",
-      "data": {
-        "text": "The rise of voice-activated assistants like Amazon’s Alexa or Google’s Assistant demonstrates consumers' growing acceptance and demand for such technologies. By integrating similar technologies into your business operations or customer service offerings, you can stay ahead of the curve and meet your customers’ evolving expectations."
-      }
-    },
-    {
-      "id": "bwmSrSfgxe",
-      "type": "header",
-      "data": {
-        "text": "What is Speech2Text and Text2Speech?",
-        "level": 2
-      }
-    },
-    {
-      "id": "OQ_frHcyuT",
-      "type": "paragraph",
-      "data": {
-        "text": "Speech2Text&nbsp;and&nbsp;Text2Speech&nbsp;are two key technologies underpinning voice systems' functionality."
-      }
-    },
-    {
-      "id": "yIb6fwxEsk",
-      "type": "paragraph",
-      "data": {
-        "text": "Speech2Text&nbsp;(or Speech Recognition) is a technology that converts spoken language into written text. This technology powers voice-command searches, transcription services, and voice assistants like Siri or Alexa."
-      }
-    },
-    {
-      "id": "-ZlxUyUSi9",
-      "type": "paragraph",
-      "data": {
-        "text": "Text2Speech&nbsp;is the reverse process, converting written text into spoken words. This technology is used in applications such as audiobooks, content narration, and interactive voice response (IVR) systems."
-      }
-    },
-    {
-      "id": "XivgZSaJYv",
-      "type": "header",
-      "data": {
-        "text": "Exploring Speech2Text: Turning Voice into Text",
-        "level": 4
-      }
-    },
-    {
-      "id": "R2yHqSNzhe",
-      "type": "paragraph",
-      "data": {
-        "text": "There are numerous real-world applications for businesses:"
-      }
-    },
-    {
-      "id": "X2iXb4wrWS",
-      "type": "paragraph",
-      "data": {
-        "text": "<b>Customer Support Transcription:&nbsp;</b>Convert customer calls into text for record-keeping or analysis."
-      }
-    },
-    {
-      "id": "ILD0DpXsHC",
-      "type": "paragraph",
-      "data": {
-        "text": "<b>Voice-command Searches:</b>&nbsp;Allow customers to search your product catalog using their voice."
-      }
-    },
-    {
-      "id": "ePXeUQSFAy",
-      "type": "paragraph",
-      "data": {
-        "text": "<b>Voice Notes and Reminders for CRM Systems:&nbsp;</b>Enable sales teams to log interactions or set reminders using their voice quickly."
-      }
-    },
-    {
-      "id": "WifKSu3XEX",
-      "type": "paragraph",
-      "data": {
-        "text": "The benefits of Speech2Text include instant communication, improved accessibility for those who struggle with typing or reading small text, and a modern touch to your business operations."
-      }
-    },
-    {
-      "id": "nzfSF4Y883",
-      "type": "header",
-      "data": {
-        "text": "Delving into Text2Speech: Giving Voice to Text",
-        "level": 4
-      }
-    },
-    {
-      "id": "WM4l3n4cHw",
-      "type": "paragraph",
-      "data": {
-        "text": "This technology can transform written content into spoken words with potential applications such as:"
-      }
-    },
-    {
-      "id": "q74eOPmdQZ",
-      "type": "paragraph",
-      "data": {
-        "text": "Voice-based Notifications and Alerts:&nbsp;Send automated voice messages to customers or staff.Interactive Voice Response (IVR) Systems:&nbsp;Using automated speech, guide callers through your phone system.Audiobooks and Content Narration:&nbsp;Convert blog posts or articles into audio format for accessibility or convenience."
-      }
-    },
-    {
-      "id": "ofIiecHsA-",
-      "type": "paragraph",
-      "data": {
-        "text": "The benefits of Text2Speech include enhancing user engagement, improving accessibility for visually impaired users, and offering a dynamic user experience."
-      }
-    },
-    {
-      "id": "2xADck_fIU",
-      "type": "header",
-      "data": {
-        "text": "How can I safely use voice technologies with LLMs like ChatGPT?",
-        "level": 4
-      }
-    },
-    {
-      "id": "o56ZgutlS8",
-      "type": "paragraph",
-      "data": {
-        "text": "While ChatGPT’s new voice feature may not be suitable for companies with sensitive data, there are alternative solutions. One such solution is to use Speech2Text and Text2Speech APIs, such as those offered by Google."
-      }
-    },
-    {
-      "id": "kAmUh8goCx",
-      "type": "simpleImage",
-      "data": {
-        "url": "https://miro.medium.com/v2/resize:fit:512/0*Qnen2kirHFFiUEWL",
-        "caption": "Google offers 220+ voices across 40+ languages and variants",
-        "withBorder": false,
-        "withBackground": false,
-        "stretched": false
-      }
-    },
-    {
-      "id": "N_RNiHzz7e",
-      "type": "paragraph",
-      "data": {
-        "text": "Google’s speech API offers hundreds of voices in dozens of languages and is more powerful than OpenAI’s Whisper. By using Google’s voice API in conjunction with the ChatGPT API, you can maintain full control over your data. Importantly, no data is retained for model training when using these APIs."
-      }
-    },
-    {
-      "id": "48JbP4HLJZ",
-      "type": "paragraph",
-      "data": {
-        "text": "This approach allows you to leverage the power of ChatGPT’s conversational abilities while ensuring your data remains secure."
-      }
-    },
-    {
-      "id": "I3B-fFkQnB",
-      "type": "header",
-      "data": {
-        "text": "A Quick Tutorial For Combining Google Voice APIs and ChatGPT",
-        "level": 2
-      }
-    },
-    {
-      "id": "BXLeur9KEh",
-      "type": "paragraph",
-      "data": {
-        "text": "We've put together a quick tutorial to help you integrate Google’s voice APIs and ChatGPT. The full tutorial is available on YouTube and walks you through every step."
-      }
-    },
-    {
-      "id": "X7Vn9LZPK9",
-      "type": "paragraph",
-      "data": {
-        "text": "Tutorial:&nbsp;<a href=\"https://www.youtube.com/watch?v=nWv-q3-7cY8\" target=\"_blank\">Build a Text2Speech Chatbot in Minutes in PYTHON with ChatGPT</a>"
-      }
-    },
-    {
-      "id": "ZqeManjmd0",
-      "type": "paragraph",
-      "data": {
-        "text": "Here’s a brief overview of whats in the tutorial:"
-      }
-    },
-    {
-      "id": "GlcsjQm-LG",
-      "type": "header",
-      "data": {
-        "text": "Getting Started: Setting Up Your Development Environment",
-        "level": 4
-      }
-    },
-    {
-      "id": "O9bXGH9_18",
-      "type": "paragraph",
-      "data": {
-        "text": "First, you’ll need to set up your development environment:"
-      }
-    },
-    {
-      "id": "cRnU3JiGkX",
-      "type": "paragraph",
-      "data": {
-        "text": "1. Navigate to the provided repository and clone it."
-      }
-    },
-    {
-      "id": "ADasV9Rx_8",
-      "type": "paragraph",
-      "data": {
-        "text": "2. Install the required tools: Git and a preferred IDE (e.g., Visual Studio Code)."
-      }
-    },
-    {
-      "id": "2CaD5er43j",
-      "type": "header",
-      "data": {
-        "text": "Key Ingredients: API Keys and Their Importance",
-        "level": 4
-      }
-    },
-    {
-      "id": "UncBJZUjAz",
-      "type": "paragraph",
-      "data": {
-        "text": "Next, you’ll need to obtain the necessary API keys:"
-      }
-    },
-    {
-      "id": "fBMFPmd8-g",
-      "type": "paragraph",
-      "data": {
-        "text": "<b>OpenAI API Key:&nbsp;</b>Sign up on OpenAI’s website to obtain this key, which is crucial for driving ChatGPT."
-      }
-    },
-    {
-      "id": "cRLPdYsAwZ",
-      "type": "paragraph",
-      "data": {
-        "text": "<b>Google Project and Credentials: </b>Create a Google project and enable relevant APIs. Specifically, you’ll need to enable “Cloud Speech-to-Text” and “Text-to-Speech” services. Set up billing for your project and obtain JSON credentials for these Google APIs."
-      }
-    },
-    {
-      "id": "Bf-lbyHHFA",
-      "type": "header",
-      "data": {
-        "text": "Understanding the Modules",
-        "level": 4
-      }
-    },
-    {
-      "id": "MLjxaBp4ND",
-      "type": "paragraph",
-      "data": {
-        "text": "The provided codebase includes several modules:"
-      }
-    },
-    {
-      "id": "5aWe1e91-n",
-      "type": "paragraph",
-      "data": {
-        "text": "<b>chatbot.py</b>: Handles core interactions with ChatGPT."
-      }
-    },
-    {
-      "id": "N7piUeR_Bu",
-      "type": "paragraph",
-      "data": {
-        "text": "<b>text_to_speech.py:</b> Converts ChatGPT’s text responses into voice."
-      }
-    },
-    {
-      "id": "FGGwZTgaOe",
-      "type": "paragraph",
-      "data": {
-        "text": "<b>transcribe.py: </b>Transcribes user’s voice inputs for ChatGPT."
-      }
-    },
-    {
-      "id": "G_AUmtSPSA",
-      "type": "paragraph",
-      "data": {
-        "text": "<b>main.py:&nbsp;</b>Sets up the user interface using Python Tkinter."
-      }
-    },
-    {
-      "id": "VLnLc0D_Ug",
-      "type": "header",
-      "data": {
-        "text": "The Bigger Picture: Beyond the Tutorial",
-        "level": 2
-      }
-    },
-    {
-      "id": "WeokOMpg3l",
-      "type": "paragraph",
-      "data": {
-        "text": "While this tutorial provides a basic introduction to integrating voice technology with AI chatbots like ChatGPT, many more possibilities exist for businesses to explore further."
-      }
-    },
-    {
-      "id": "XIcGD-Okwo",
-      "type": "paragraph",
-      "data": {
-        "text": "Considerations for security, scalability, and user experience should be at the forefront as you scale these technologies beyond simple chatbots."
-      }
-    },
-    {
-      "id": "uOBVu62-V7",
-      "type": "paragraph",
-      "data": {
-        "text": "Several businesses have seamlessly integrated voice tech into their operations, resulting in increased customer satisfaction, improved operational efficiency, and innovative offerings. For instance:"
-      }
-    },
-    {
-      "id": "OQ2oKSdOGB",
+      "id": "6cvyqykmk3",
       "type": "list",
       "data": {
-        "style": "unordered",
+        "style": "ordered",
         "items": [
-          "Domino’s Pizza&nbsp;has seen a significant increase in their market share after introducing ‘Dom’, their voice ordering assistant. This has not only improved customer experience but also streamlined their ordering process.",
-          "Bank of America&nbsp;introduced Erica, a voice-enabled AI assistant that helps customers with banking services. Erica has been a game-changer for the bank, improving customer engagement and driving up mobile banking usage.",
-          "Starbucks, in years prior, made&nbsp;a significant impact with its voice ordering system, “My Starbucks Barista”. This AI-powered chatbot allows customers to place their orders via voice command or messaging. The introduction of this technology has not only improved customer experience but also increased the efficiency of their ordering process, contributing to Starbucks’ continued market dominance.",
-          "Capital One&nbsp;is another company leveraging voice technology to enhance customer experience. They introduced “Eno,” a natural language chatbot that helps customers manage their money through voice commands. Eno can provide real-time information about account balances and transactions (plus it can even understand and respond to emojis). This innovative approach has helped Capital One differentiate itself in the highly competitive banking industry."
+          "Arguments and their defaults must be first defined in the code",
+          "The flexibility for default arguments to be overridden via file-based configurations (.json) or directly in the command-line.",
+          "Type validation.",
+          "Value validation.",
+          "Immutability",
+          "Specific help messages for each argument.",
+          "An exact copy of the configuration used for the run is automatically saved to a save directory specific for that run.",
+          "The save directory must be determined by the Config library and set as an attribute of the Config object, so that we can easily access the save directory to save model weights, validation metrics, and so forth in a single centralized location (along with the exact copy of the config, which is saved when the config is built)."
         ]
       }
     },
     {
-      "id": "8XutbXRSjS",
+      "id": "f3xoxewhy4",
       "type": "paragraph",
       "data": {
-        "text": "These examples demonstrate how businesses across various sectors are leveraging voice technology to improve customer engagement and operational efficiency. Remember, the goal is not just to adopt new technology for its own sake but to leverage it in ways that add real value to your business and your customers."
+        "text": "Unfortunately, neither ArgParse nor Hydra seemed to fully satisfy these requirements. I was also concerned that Hydra’s complexity might pose a barrier to its adoption. Thus we set off to create our own config library. One library that came out of that effort was QuickConfig, a library I personally designed and have used with success."
       }
     },
     {
-      "id": "nAAoIMZKaU",
+      "id": "6k1k42mzyy",
+      "type": "header",
+      "data": {
+        "text": "Comparison with ArgParse and Hydra",
+        "level": 2
+      }
+    },
+    {
+      "id": "u66579cb6e",
+      "type": "paragraph",
+      "data": {
+        "text": "Here are some more details on QuickConfig, and how it compares to ArgParse and Hydra…"
+      }
+    },
+    {
+      "id": "ytfxekhl6c",
+      "type": "paragraph",
+      "data": {
+        "text": "Like ArgParse, QuickConfig allows users to define arguments and their default values in code, but like Hydra, it extends this functionality by permitting these defaults to be overridden by file-based configurations and/or at the command-line (both options which are not available in ArgParse). An added layer of safety is achieved by QuickConfig’s insistence that users define all arguments in the code before an argument can be supplied in a file or the command line."
+      }
+    },
+    {
+      "id": "t94szektap",
+      "type": "paragraph",
+      "data": {
+        "text": "Below: An example of overriding defaults with values in config.json, and overriding the “lr” argument of the training sub-config through the command-line."
+      }
+    },
+    {
+      "id": "7isj8n3s8m",
+      "type": "code",
+      "data": {
+        "code": "python -m src.main config=config.json training.lr=1e-4"
+      }
+    },
+    {
+      "id": "7p3972i9dz",
+      "type": "paragraph",
+      "data": {
+        "text": "Below: Defining subconfigs, arguments, and their defaults."
+      }
+    },
+    {
+      "id": "rjt8b5ktl9",
+      "type": "code",
+      "data": {
+        "code": "from quickconfig.main_base import MainBase\nfrom quickconfig.base_config import BaseConfig\n\nclass MainConfig(MainBase):    \n  def __init__(self):        \n    super().__init__(prog=\"train.sh\", description=\"Train a model\")        \n    self.model = ModelConfig        \n    self.training = TrainingConfig\n\nclass ModelConfig(BaseConfig):    \n  def __init__(self):        \n    super().__init__()        \n    self.add_argument(            \n      name=\"model_type\",            \n      type=str,            \n      default=\"retinanet\",            \n      help=\"The type of model to use\",            \n      validation=lambda x: x in [\"retinanet\", \"patch\"],       \n      )\n\nclass TrainingConfig(BaseConfig):    \n  def __init__(self):        \n    super().__init__()        \n    self.add_argument(             \n      name=\"use_mlflow_logger\",            \n      type=bool,            \n      default=False,            \n      help=\"Should we log with mlflow?\",            \n      validation=None,        \n      )        \n    self.add_argument(            \n      name=\"lr\",            \n      type=float,            \n      default=1e-3,            \n      help=\"This is a mock integer arg\",            \n      validation=lambda x: x >= 1e-9 and x <= 1e-2,        \n      )"
+      }
+    },
+    {
+      "id": "fbls7t365k",
+      "type": "paragraph",
+      "data": {
+        "text": "Below: Using QuickConfig with your module."
+      }
+    },
+    {
+      "id": "z97aanqi5y",
+      "type": "code",
+      "data": {
+        "code": "from src.training.main_config import MainConfig\n\nclass MySession:\n...\n...\n\nif __name__ == \"__main__\":    \n  config = MainConfig()    \n  config.build()    \n\n  session = MySession(config)    \n  session.run()"
+      }
+    },
+    {
+      "id": "hd4h5ay1vg",
+      "type": "paragraph",
+      "data": {
+        "text": "QuickConfig sets itself apart from Hydra with its easy to use type and value validation. Utilizing lambda functions, QuickConfig performs value validation, offering a level of control and verification that guards against runtime errors. Hydra, while being a powerful tool, does not offer a straightforward way to specify data type and validation without resorting to creating data-class configurations — a process that can be cumbersome in Hydra. QuickConfig makes type and value validation a breeze."
+      }
+    },
+    {
+      "id": "pnrxcp5wce",
+      "type": "paragraph",
+      "data": {
+        "text": "Below: Defining arguments and their defaults in code with QuickConfig."
+      }
+    },
+    {
+      "id": "adxkowid3q",
+      "type": "code",
+      "data": {
+        "code": "self.add_argument(    \n    name=\"lr\",    \n    type=float,    \n    default=1e-3,    \n    help=\"This is a mock integer arg\",    \n    validation=lambda x: x >= 1e-9 and x <= 1e-2\n)"
+      }
+    },
+    {
+      "id": "au057wjany",
+      "type": "paragraph",
+      "data": {
+        "text": "The way QuickConfig organizes argument access makes it an appealing choice. Arguments are handled as attributes, allowing for a structured access like 'config.model_architecture.num_conv_layers'. In this case, model_architecture is a sub-config of the main config, and num_conv_layers is a argument of the model_architecture sub-config. This design ensures the code remains neat, readable, and easy to maintain. Adding to its reliability, QuickConfig makes configurations immutable once they are created, preventing accidental modifications later in the code. (Note that QuickConfig, like Hydra, only permits one level of nesting in the config. i.e. cub-configs cannot have their own sub-configs)."
+      }
+    },
+    {
+      "id": "oth4cy9m1f",
+      "type": "paragraph",
+      "data": {
+        "text": "While QuickConfig holds several advantages, Hydra is more featured. One great Hydra feature is the ability to execute multiple training runs with different argument values from a single command-line command. In Hydra, different training runs can be initiated by simply separating parameter values with a comma, like “lr=1e-5,1e-4”. This mechanism expedites the process of training with different hyperparameters, thereby boosting efficiency in experimentation and tuning. With that being said, that functionality is next on my list to implement (And if anyone is interested in implementing that or additional features, I welcome contributors)."
+      }
+    },
+    {
+      "id": "bvhgzzd1uw",
+      "type": "list",
+      "data": {
+        "style": "ordered",
+        "items": [
+          "— help” or “- — h” with the command-line."
+        ]
+      }
+    },
+    {
+      "id": "74jgk651p7",
+      "type": "image",
+      "data": {
+        "file": {
+          "url": "https://miro.medium.com/v2/resize:fit:700/1*51fBveR5dnD0iIJEOHGbnw.png"
+        },
+        "caption": "An example of a QuickConfig help message.",
+        "withBorder": false,
+        "stretched": false,
+        "withBackground": false
+      }
+    },
+    {
+      "id": "bcw04kgyil",
+      "type": "paragraph",
+      "data": {
+        "text": "<An example of a QuickConfig help message."
+      }
+    },
+    {
+      "id": "ink9f7wwyr",
+      "type": "paragraph",
+      "data": {
+        "text": "Hydra’s handling of configuration save directories also has its challenges. Unless a datetime is added to the save directory, the directory risks being overridden each time, potentially resulting in data loss. While using Hydra’s functionality to create unique save directories using datetime can circumvent this problem, naming folders wiht long datetime strings is not as intuitive as QuickConfig’s method of sequentially naming the folders for easy reference."
+      }
+    },
+    {
+      "id": "3oarjo4cp8",
+      "type": "image",
+      "data": {
+        "file": {
+          "url": "https://miro.medium.com/v2/resize:fit:187/1*2S28TQWswIXB047-86Jc4A.png"
+        },
+        "caption": "By default, QuickConfig creates a new folder in the “results” directory for each day. Each run on that day results in the creation of a folder (with an integer name). The folder named “N” corresponds to the Nth run of that day.",
+        "withBorder": false,
+        "stretched": false,
+        "withBackground": false
+      }
+    },
+    {
+      "id": "dsm1b4z4lt",
+      "type": "paragraph",
+      "data": {
+        "text": "<By default, QuickConfig creates a new folder in the “results” directory for each day. Each run on that day results in the creation of a folder (with an integer name). The folder named “N” corresponds to the Nth run of that day."
+      }
+    },
+    {
+      "id": "7wfe7ez93u",
       "type": "header",
       "data": {
         "text": "Final Thoughts",
@@ -406,31 +226,31 @@
       }
     },
     {
-      "id": "zCnbkQ8bLL",
+      "id": "ejb0kuny8c",
       "type": "paragraph",
       "data": {
-        "text": "As we move into the digital age, businesses that embrace and adapt to new technologies will be better positioned to thrive. Voice technology, in particular, offers a wealth of opportunities for businesses to improve their operations and customer experiences. One of the most widely applicable applications of voice technology is multi-lingual support. Dozens of languages are already available through Google Voice API, and new languages are added almost every month."
+        "text": "In conclusion, QuickConfig is a simple, robust and user-friendly alternative to ArgParse and Hydra. Its ability to override defaults on the fly from a file-based config or the command-line, coupled with its type and value validation, make QuickConfig not just extremely easy to use, but dependable as well. Its attribute-like argument access and immutable configurations help improve reliability and readability of your code. While it does miss out on some features, such as Hydra’s ability to initiate multiple training runs with different parameters specified from the command-line, QuickConfig is easier to use than Hydra, offers better help messages, better type and value validation, and saves experiments in more intuitively named directories."
       }
     },
     {
-      "id": "7r0QRJFII_",
+      "id": "4k243wqgkk",
       "type": "paragraph",
       "data": {
-        "text": "We encourage you to experiment with voice technology in your business. The tutorial provided in this article is a great starting point. However, don’t stop there. Explore different applications and use cases that are relevant to your business."
+        "text": "So if you’re looking for an easy to use config library that has type and value validation, immutability, allows easy access of arguments in the code by making arguments attributes, automatically saves a copy of the configuration, and has the ability to configure specific help messages for each and every argument, look no further. Give QuickConfig a try and let me know what you think."
       }
     },
     {
-      "id": "_46UXZoLa6",
-      "type": "paragraph",
+      "id": "99dsbjp1dq",
+      "type": "code",
       "data": {
-        "text": "Finally, we invite you to share your experiences and learnings as you implement voice tech in your operations. Your insights could be invaluable to other businesses embarking on a similar journey."
+        "code": "pip install pyquickconfig"
       }
     },
     {
-      "id": "g62zRhCmaY",
+      "id": "u09leb5hkc",
       "type": "paragraph",
       "data": {
-        "text": "Remember, the future belongs to those who are prepared for it. So start exploring today!"
+        "text": "QuickConfig Repo: https://github.com/austinibele/quickconfig"
       }
     }
   ],
