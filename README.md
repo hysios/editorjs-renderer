@@ -1,3 +1,13 @@
+# editorjs-renderer
+This is a modified version of pavittrax's editorjs-html. 
+
+The change's relative to his library (as of 11/2/2023) include:
+- Rendering for **simpleImage** blocks
+- **Caption** rendering for image blocks
+- Small padding, line spacing changes, etc
+
+Besides that its identical. Here is pavittrax's readme. Support him with your stars or coffee, not me :)
+
 # editorjs-html
 A utility to parse editorjs clean data to HTML. 
   - Use it with plain Javascript/Typescript, React, Angular, Vue or any templating engine/framework of your choice.

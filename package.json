@@ -1,7 +1,7 @@
 {
-  "name": "editorjs-html",
-  "version": "3.4.3",
-  "description": "",
+  "name": "editorjs-renderer",
+  "version": "1.0.0",
+  "description": "An extensible custom renderer for editorjs blocks that includes support for the simpleImage block",
   "main": "build/edjsHTML.node.js",
   "types": "build/app.d.ts",
   "scripts": {
@@ -15,7 +15,13 @@
     "json",
     "editorjs-html"
   ],
-  "author": "pavittarx",
+  "homepage": "https://github.com/austinibele/editorjs-renderer",
+  "bugs": "https://github.com/austinibele/editorjs-renderer/issues",
+  "repository": {
+    "url": "https://github.com/austinibele/editorjs-renderer",
+    "type": "git"
+  },
+  "author": "Austin Ibele <austin.ibele@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "@babel/cli": "^7.12.10",
