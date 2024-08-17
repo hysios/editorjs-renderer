@@ -55,7 +55,7 @@ const transforms: transforms = {
     if (!data.level) {
       return ``
     } else if (data.level === 1) {
-    return `<div id=${id} style="text-align:center"><h${data.level}>${data.text}</h${data.level}></div>`;
+      return `<div id=${id} style="text-align:center"><h${data.level}>${data.text}</h${data.level}></div>`;
     } else if (data.level < 4) {
       return `<div id=${id} style="padding-top: 15px"><h${data.level}>${data.text}</h${data.level}></div>`
     } else {
@@ -94,25 +94,23 @@ const transforms: transforms = {
   image: ({ data, id }) => {
     let alt = data.caption ? data.caption : "Image";
     if (data.caption === "") {
-      return `<img src="${
-        data.file && data.file.url ? data.file.url : data.url
-      }" alt="${alt}" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" /></br>`;
+      return `<img src="${data.file && data.file.url ? data.file.url : data.url
+        }" alt="${alt}" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" /></br>`;
     }
-    return `<img src="${
-      data.file && data.file.url ? data.file.url : data.url
-    }" alt="${alt}" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" />
+    return `<img src="${data.file && data.file.url ? data.file.url : data.url
+      }" alt="${alt}" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" />
     <p class="image-caption">${data.caption}</p>`;
   },
 
   simpleImage: ({ data, id }) => {
     let url = data.url;
-    let caption = data.caption ? data.caption : "Image";
-    return `<img src="${url}" alt="${caption}" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" />
-  <p class="image-caption">${caption}</p>`;
+    let alt = data.caption ? data.caption : "Image";
+    return `<img src="${url}" alt="${alt}" style="display: block; margin: 0 auto; max-width: 100%; height: auto;" />
+    ${data.caption && `<p class= "image-caption" >${data.caption}</p>`}`;
   },
 
   quote: ({ data, id }) => {
-    return `<blockquote>${data.text}</blockquote> - ${data.caption}`;
+    return `< blockquote > ${data.text}</blockquote> - ${data.caption}`;
   },
 
   code: ({ data, id }) => {

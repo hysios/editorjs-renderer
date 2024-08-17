@@ -1,4 +1,4 @@
-import { OutputData } from "@editorjs/editorjs";
+import { OutputBlockData, OutputData } from "@editorjs/editorjs";
 import transforms, { block } from "./transforms";
 import { ParseFunctionError } from "./errors";
 
@@ -30,7 +30,7 @@ const parser = (plugins = {}): parser => {
     parseStrict: ({ blocks }) => {
       const parserFreeBlocks = parser(parsers).validate({ blocks });
 
-      if (parserFreeBlocks.length){
+      if (parserFreeBlocks.length) {
         throw new Error(`Parser Functions missing for blocks: ${parserFreeBlocks.toString()}`);
       }
 
@@ -48,7 +48,7 @@ const parser = (plugins = {}): parser => {
 
     validate: ({ blocks }) => {
       const types = blocks
-        .map((item: block) => item.type)
+        .map((item: OutputBlockData) => item.type)
         .filter(
           (item: string, index: number, blocksArr: Array<string>) =>
             blocksArr.indexOf(item) === index
